@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: prometheus-kbot
+spec:
+  containers:
+    - name: prometheus-kbot
+      image: sedrikkh/prometheus_kbot
+      ports:
+        - containerPort: 8000
